@@ -68,11 +68,8 @@ main > header {
   overflow: auto;
 }
 
-main > header > * {
-  float: left;
-}
-
 main > header > h1 {
+  float: left;
   font-size: 1.5em;
   text-transform: uppercase;
   line-height: 1;
