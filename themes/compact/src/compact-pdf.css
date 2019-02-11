@@ -101,3 +101,7 @@ h2 > span.fa {
   text-align: left;
   margin-right: 3px;
 }
+
+.keywords {
+  font-style: italic;
+}
