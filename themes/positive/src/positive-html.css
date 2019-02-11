@@ -57,18 +57,18 @@ h3 {
   float: left;
 }
 
-table {
+#skills table {
   width: 100%;
   text-transform: uppercase;
 }
 
-td:first-child {
+#skills td:first-child {
   letter-spacing: 2px;
   color: #bd5b5b;
   font-size: 20px;
 }
 
-td:last-child {
+#skills td:last-child {
   text-align: justify; /* HTML justification sucks, but in this case... */
 }
 
