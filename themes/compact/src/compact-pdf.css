@@ -65,7 +65,7 @@ main > header {
   width: 100%;
   margin-bottom: 0;
   position: relative;
-  overflow: auto;
+  height: 2em;
 }
 
 main > header > h1 {
@@ -76,9 +76,6 @@ main > header > h1 {
 }
 #contact {
   float: right;
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 #contact > div {
