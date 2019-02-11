@@ -11,9 +11,9 @@
       <header>
         <h1>{{{ r.name }}}</h1>
         <div id="contact">
-          {{#has 'contact.email'}}<div class="email"><a href="mailto:{{{ RAW.contact.email }}}">{{ RAW.contact.email }}</a></div>{{/has}}
-          {{#has 'contact.phone'}}<div class="phone">{{ RAW.contact.phone }}</div>{{/has}}
-          {{#has 'contact.website'}}<div class="website"><a href="{{{ RAW.contact.website }}}">{{trimURL RAW.contact.website }}</a></div>{{/has}}
+          {{#has 'contact.email'}}<div class="email"><a href="mailto:{{{ RAW.contact.email }}}"><span class="fa fa-lg fa-at"></span>&nbsp;{{ RAW.contact.email }}</a></div>{{/has}}
+          {{#has 'contact.phone'}}<div class="phone"><span class="fa fa-lg fa-phone"></span>&nbsp;{{ RAW.contact.phone }}</div>{{/has}}
+          {{#has 'contact.website'}}<div class="website"><a href="{{{ RAW.contact.website }}}"><span class="fa fa-lg fa-globe"></span>&nbsp;{{trimURL RAW.contact.website }}</a></div>{{/has}}
         </div>
       </header>
 
