@@ -15,7 +15,7 @@
       {{#each r.skills.sets}}
       <tr>
         <td style="width: 25%;">{{ name }}</td>
-        <td class="keywords">{{#each skills}}{{ . }} {{/each}}</td>
+        <td class="keywords">{{#each skills}}<span class="keyword">{{ . }}</span>{{/each}}</td>
       </tr>
       {{/each}}
     </tbody>
