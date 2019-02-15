@@ -29,6 +29,7 @@ h3 {
 hr {
   border: none;
   border-top: 1px solid #B3B3B3;
+  clear: both;
 }
 
 main {
@@ -55,6 +56,13 @@ p, li {
 
 .tenure {
   float: right;
+}
+
+.location {
+  float: right;
+  clear: right;
+  margin-left: 5ch;
+  margin-bottom: 1em;
 }
 
 thead {

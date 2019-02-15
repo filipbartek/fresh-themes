@@ -55,9 +55,24 @@
     {{/if}}
     </h3>
     <span class="tenure">{{dateRange .}}</span>
+    {{#if location}}<span class="location">{{location}}</span>{{/if}}
   <p>{{{ summary }}}</p>
   {{> keywords}}
   {{> highlights }}
+</div>
+{{/inline}}
+
+{{#*inline "body-education" }}
+<div>
+  <h3>
+    {{#if studyType}}{{{ studyType }}}{{#if area}} of {{{ area }}}{{/if}}, {{/if}}
+    <a href="{{{ url }}}">{{{ institution }}}</a>
+  </h3>
+  <span class="tenure">{{dateRange .}}</span>
+  {{#if location}}<span class="location">{{location}}</span>{{/if}}
+  {{{ summary }}}
+  {{> highlights }}
+  {{#if curriculum}}<span class="keywords">{{#each curriculum}}{{{ . }}} {{/each}}</span>{{/if}}
 </div>
 {{/inline}}
 
@@ -71,9 +86,28 @@
     {{/if}}
     </h3>
     <span class="tenure">{{dateRange .}}</span>
+    {{#if location}}<span class="location">{{location}}</span>{{/if}}
   <p>{{{ summary }}}</p>
-  {{> highlights }}
   {{> keywords}}
+  {{> highlights }}
+</div>
+{{/inline}}
+
+{{#*inline "body-extracurricular" }}
+<div>
+  <h3>
+    <em>{{ title }}</em>,
+    {{#if url }}
+    <a href="{{{ url }}}">{{ activity }}</a>
+    {{else}}
+    {{ activity }}
+    {{/if}}
+  </h3>
+  <span class="tenure">{{dateRange .}}</span>
+  {{#if location}}<span class="location">{{location}}</span>{{/if}}
+  <p>{{{ summary }}}</p>
+  {{> keywords}}
+  {{> highlights }}
 </div>
 {{/inline}}
 
