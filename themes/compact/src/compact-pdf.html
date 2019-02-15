@@ -56,9 +56,7 @@
     </h3>
     <span class="tenure">{{dateRange .}}</span>
   <p>{{{ summary }}}</p>
-  {{#if keywords}}
-  <span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>
-  {{/if}}
+  {{> keywords}}
   {{> highlights }}
 </div>
 {{/inline}}
@@ -75,9 +73,7 @@
     <span class="tenure">{{dateRange .}}</span>
   <p>{{{ summary }}}</p>
   {{> highlights }}
-  {{#if keywords}}
-  <span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>
-  {{/if}}
+  {{> keywords}}
 </div>
 {{/inline}}
 
@@ -89,7 +85,7 @@
 
 {{#*inline "header-info"}}{{/inline}}
 {{> section/info }}
-{{> section/skills _icon="icon-skills"}}
+{{> skills-html _icon="icon-skills"}}
 {{> section/employment _icon="icon-employment"}}
 {{> section/projects _icon="icon-projects"}}
 {{> section/governance _icon="icon-governance"}}

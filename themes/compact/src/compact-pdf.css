@@ -101,3 +101,8 @@ h2 > span.fa {
 .keywords {
   font-style: italic;
 }
+
+/* https://stackoverflow.com/a/10405305/4054250 */
+span.keyword:not(:last-of-type):after {
+  content: ', ';
+}
