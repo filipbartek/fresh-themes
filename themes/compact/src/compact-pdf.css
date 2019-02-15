@@ -56,6 +56,7 @@ p, li {
 
 .tenure {
   float: right;
+  margin-left: 5ch;
 }
 
 .location {
