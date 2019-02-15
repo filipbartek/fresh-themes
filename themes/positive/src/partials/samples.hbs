@@ -17,7 +17,7 @@
     <span class="tenure">{{date date 'YYYY-MM'}}</span>
     {{{ summary }}}
     {{> highlights }}
-    {{#if keywords}}<span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>{{/if}}
+    {{> keywords}}
     </div>
     {{/body-samples}}
   {{/each}}
