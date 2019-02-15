@@ -7,7 +7,10 @@
   {{#each r.testimonials}}
     {{#> body-testimonials }}
     <div>
-    <h3><a href="{{ url }}"><em>{{ name }}</em></a>{{#if role}} ({{ role }}){{/if}}{{#if organization}}, {{ organization }}{{/if}}</h3>
+    <h3>
+      <a href="{{ url }}"><em>{{ name }}</em></a>
+      {{#if role}}({{ role }}){{/if}}{{#if organization}}, {{ organization }}{{/if}}
+    </h3>
     <span class="tenure">{{date date 'YYYY-MM'}}</span>
     {{#if location}}<span class="location">{{location}}</span>{{/if}}
     <p>{{{ quote }}}</p>
