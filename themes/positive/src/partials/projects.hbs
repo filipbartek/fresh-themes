@@ -7,12 +7,13 @@
   {{#each r.projects }}
     {{#> body-projects }}
     <div>
-    <h3>{{#if role}}<em>{{camelCase role }}</em>,{{/if}}
-    {{#if url}}
-    <a href="{{{ url }}}">{{ title }}</a>
-    {{else}}
-    {{ title }}
-    {{/if}}
+    <h3>
+      {{#if role}}<em>{{camelCase role }}</em>,{{/if}}
+      {{#if url}}
+      <a href="{{{ url }}}">{{ title }}</a>
+      {{else}}
+      {{ title }}
+      {{/if}}
     </h3>
     {{#if start}}<span class="tenure">{{dateRange .}}</span>{{/if}}
     {{#if location}}<span class="location">{{location}}</span>{{/if}}

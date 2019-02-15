@@ -8,11 +8,11 @@
     {{#> body-samples }}
     <div>
     <h3>
-    {{#if url}}
-    <a href="{{{ url }}}">{{ title }}</a>
-    {{else}}
-    {{ title }}
-    {{/if}}
+      {{#if url}}
+      <a href="{{{ url }}}">{{ title }}</a>
+      {{else}}
+      {{ title }}
+      {{/if}}
     </h3>
     <span class="tenure">{{date date 'YYYY-MM'}}</span>
     {{{ summary }}}
