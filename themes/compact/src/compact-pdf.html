@@ -109,6 +109,23 @@
 </div>
 {{/inline}}
 
+{{#*inline "body-affiliation" }}
+<div>
+  <h3><em>{{{ role }}}</em>,
+    {{#if url }}
+    <a href="{{{ url }}}">{{{ organization }}}</a>
+    {{else}}
+    {{{ organization }}}
+    {{/if}}
+  </h3>
+  <span class="tenure">{{dateRange .}}</span>
+  {{#if location}}<span class="location">{{location}}</span>{{/if}}
+  {{{ summary }}}
+  {{> highlights }}
+  {{#if keywords}}<span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>{{/if}}
+</div>
+{{/inline}}
+
 {{#*inline "body-extracurricular" }}
 <div>
   <h3>
@@ -152,12 +169,12 @@
 {{> section/education _icon="icon-education"}}
 {{> section/governance _icon="icon-governance"}}
 {{> section/service _icon="icon-service"}}
+{{> section/affiliation _icon="icon-affiliation"}}
 {{> section/extracurricular _icon="icon-extracurricular"}}
 <p style="page-break-after: always;"/>
 {{> section/projects _icon="icon-projects"}}
 {{> section/samples _icon="icon-samples"}}
 {{> section/writing _icon="icon-writing"}}
-{{> section/affiliation _icon="icon-affiliation"}}
 {{> section/reading _icon="icon-reading"}}
 {{> section/recognition _icon="icon-recognition"}}
 {{> section/speaking _icon="icon-speaking"}}
